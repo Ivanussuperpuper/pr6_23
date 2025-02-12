@@ -1,4 +1,5 @@
 fun main(){
+    try{
     val Oslotemp = -4.0
     val Stockholmtemp = -13.0
     val Helsinkitemp = -15.0
@@ -16,5 +17,8 @@ fun main(){
     when{
         Helsinkitemp < Chelybinsktemp -> println("В Хельсинках ($Helsinkitemp) холоднее чем в Челябинске")
         else -> println("В Хельсинках($Helsinkitemp) теплее или так же как в Челябинске")
+    }
+    }catch (e:Exception){
+        println("Неверный тип данных")
     }
 }
